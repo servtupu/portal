@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Aplikasi Madrasah</title>
+  <!-- icon -->
+  <link rel="shortcut icon" href="./asset/logo.ico" type="image/x-icon">
+
+  <!-- Bootstrab CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="./css/mystyle.css">
+
+  <!-- Java Script -->
+  <script src="./js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./asset/logo.png" alt="" width="32" height="32" class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portal Aplikasi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" aria-current="page" href="./index.html#kurikulum">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                  <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                </svg>
+              Apps Kurikulum</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="./index.html#kesiswaan">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                  <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                </svg>
+              Apps Kesiswaan</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="./index.html#mandapo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                  <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                </svg>
+              Apps MANDAPO</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="./index.html#kepegawaian">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                  <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z"/>
+                </svg>
+              Apps Kepegawaian</a>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dokumen Kegiatan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" aria-current="page" href="./kepanitiaan.html#dockurikulum">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                </svg>
+              Dok. Kurikulum</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="./kepanitiaan.html#dockesiswaan">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                </svg>
+              Dok. Kesiswaan</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="./kepanitiaan.html#docsarpras">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                </svg>
+              Dok. Sarpras</a>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="./kepanitiaan.html#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
+                  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                </svg>
+              Dok. Pembelajaran</a>
+            </ul>
+          </li>
+
+          <a href="https://forms.gle/fh4gnNuqMcCQuLKV7" class="text-decoration-none btn btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akses E-Jurnal" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ui-checks" viewBox="0 0 16 16">
+              <path d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zM2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646a.5.5 0 0 1-.708 0l-1-1a.5.5 0 1 1 .708-.708l.646.647 1.646-1.647a.5.5 0 1 1 .708.708l-2 2zm0 8a.5.5 0 0 1-.708 0l-1-1a.5.5 0 0 1 .708-.708l.646.647 1.646-1.647a.5.5 0 0 1 .708.708l-2 2zM7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm0-5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          E-Jurnal</a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+
+<!-- jumbotron -->
+  <section class="jumbotron text-center jumbotron-fluid">
+    <img src="./asset/logo.png" width="200" height="200">
+    <h1 class="display-4">PORTAL APLIKASI MADRASAH</h1>
+    <p class="lead">Kurikulum | Kesiswaan | MANDAPO | Kepegawaian</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L0,32L43.6,32L43.6,96L87.3,96L87.3,256L130.9,256L130.9,288L174.5,288L174.5,128L218.2,128L218.2,256L261.8,256L261.8,96L305.5,96L305.5,128L349.1,128L349.1,32L392.7,32L392.7,288L436.4,288L436.4,160L480,160L480,192L523.6,192L523.6,32L567.3,32L567.3,64L610.9,64L610.9,96L654.5,96L654.5,192L698.2,192L698.2,128L741.8,128L741.8,64L785.5,64L785.5,160L829.1,160L829.1,160L872.7,160L872.7,160L916.4,160L916.4,96L960,96L960,96L1003.6,96L1003.6,192L1047.3,192L1047.3,192L1090.9,192L1090.9,160L1134.5,160L1134.5,0L1178.2,0L1178.2,256L1221.8,256L1221.8,128L1265.5,128L1265.5,160L1309.1,160L1309.1,160L1352.7,160L1352.7,160L1396.4,160L1396.4,32L1440,32L1440,320L1396.4,320L1396.4,320L1352.7,320L1352.7,320L1309.1,320L1309.1,320L1265.5,320L1265.5,320L1221.8,320L1221.8,320L1178.2,320L1178.2,320L1134.5,320L1134.5,320L1090.9,320L1090.9,320L1047.3,320L1047.3,320L1003.6,320L1003.6,320L960,320L960,320L916.4,320L916.4,320L872.7,320L872.7,320L829.1,320L829.1,320L785.5,320L785.5,320L741.8,320L741.8,320L698.2,320L698.2,320L654.5,320L654.5,320L610.9,320L610.9,320L567.3,320L567.3,320L523.6,320L523.6,320L480,320L480,320L436.4,320L436.4,320L392.7,320L392.7,320L349.1,320L349.1,320L305.5,320L305.5,320L261.8,320L261.8,320L218.2,320L218.2,320L174.5,320L174.5,320L130.9,320L130.9,320L87.3,320L87.3,320L43.6,320L43.6,320L0,320L0,320Z"></path></svg>
+  </section>
+  
+  <!-- akhir jumbotron -->
+
+   <!-- Kurikulum -->
+   <section id="kurikulum">
+     <div class="container px-4">
+      <!-- Baris 1 -->
+       <div class="row justify-content-start">
+        <h2 class="text-center display-6" style="padding-bottom: 1rem;">Aplikasi Kurikulum</h2>
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;" >
+            <div class="card bg-light border-primary">
+              <img src="./asset/logo.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p><span class="fw-bold">E-Learning</span> | Media Pembelajaran Berbasis Digital Kemeterian Agama</p>
+                <!-- Kelompok Tombol -->
+                <div class="row justify-content-start">
+                  <div class="col">
+                    <a href="https://elearningman2ponorogo.com" class="btn rounded-pill btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akses E-Learning MANDAPO" target="_blank" rel="noopener noreferrer">MANDAPO</a>
+                    <a href="https://elearning.kemenag.go.id" class="btn rounded-pill btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akses E-Learning Kemenag Pusat" target="_blank" rel="noopener noreferrer">PUSAT</a>
+                    <a href="https://elearningman2ponorogo.com/sertupu" class="btn rounded-pill btn-outline-secondary" target="_blank" rel="noopener noreferrer">ADMIN</a>
+                  </div>
+                </div>
+                <!-- Akhir Kelompok Tombol -->
+                <!-- <div class="list-group list-group-flush">
+                  <a href="https://elearningman2ponorogo.com" class="btn btn-outline-danger" target="_blank" rel="noopener noreferrer">Akses E-Learning MAN 2 PO</a>
+                  <a href="https://elearning.kemenag.go.id" class="btn btn-outline-success" target="_blank" rel="noopener noreferrer">Akses E-Learning Pusat</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-danger">
+              <img src="./asset/rdm.png" alt="..." height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">RDM</span>
+                | Raport Digital Madrasah Kementerian Agama</p>
+                <!-- Kelompok Tombol -->
+                <div class="row justify-content-start">
+                  <div class="col">
+                    <a href="http://192.168.5.212" class="btn rounded-pill btn-outline-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akses RDM MAN 2 Ponorogo" target="_blank" rel="noopener noreferrer">RDM Lokal</a>
+                    <a href="https://rdm.kemenag.go.id" class="btn rounded-pill btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akses RDM Kemenag Pusat" target="_blank" rel="noopener noreferrer">RDM Pusat</a>
+                  </div>
+                </div>
+                <!-- Akhir Kelompok Tombol -->
+                <!-- <div class="list-group">
+                  <a href="http://192.168.5.212" class="btn btn-outline-danger" target="_blank" rel="noopener noreferrer">Akses RDM MAN 2 PO</a>
+                  <a href="https://rdm.kemenag.go.id" class="btn btn-outline-success" target="_blank" rel="noopener noreferrer">Akses RDM Pusat</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-success">
+              <img src="./asset/pdum.png" alt="..." height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">PDUM</span>
+                | Pangkalan Data Ujian Madrasah Kementerian Agama</p>
+                <div class="col">
+                  <a href="https://pdum.kemenag.go.id" class="btn rounded-pill btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Akses PDUM" target="_blank" rel="noopener noreferrer">Akses PDUM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+       </div>
+      <!-- Akhir Baris 1 -->
+      
+      <!-- Baris 2 -->
+        <div class="row justify-content-start" style="padding-bottom: 1rem;">
+          <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-primary">
+              <img src="./asset/diknas.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">ANBK</span>
+                | Assessment Nasional Berbasis Komputer</p>
+                <div class="col">
+                  <a href="https://bioansma.kemdikbud.go.id" class="btn rounded-pill btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pendataan Peserta ANBK" target="_blank" rel="noopener noreferrer">BIOAN</a>
+                  <a href="https://anbk.kemdikbud.go.id" class="btn rounded-pill btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Manajemen Server ANBK" target="_blank" rel="noopener noreferrer">ANBK</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-success">
+              <img src="./asset/diknas.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">SLB GTK</span>
+                | Survey Lingkungan Belajar Guru dan Tenaga Pendidik</p>
+                <div class="col">
+                  <a href="https://surveilingkunganbelajar.kemdikbud.go.id/" class="btn rounded-pill btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Isi Survey" target="_blank" rel="noopener noreferrer">SLB GTK</a>
+                  <a href="https://dashboardslb.kemdikbud.go.id/" class="btn rounded-pill btn-outline-success" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dashboard Admin" target="_blank" rel="noopener noreferrer">ADMIN SLB</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-danger">
+              <img src="./asset/logo.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">Exam Apps</span>
+                | Aplikasi Ujian Berbasis Moodle</p>
+                <div class="col">
+                  <a href="https://elearningman2ponorogo.com/ujian" class="btn rounded-pill btn-outline-danger" target="_blank" rel="noopener noreferrer">Akses Exam Apps</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+        </div>
+      <!-- Akhir Baris 2 -->
+
+     </div>
+   </section>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f2f2" fill-opacity="1" d="M0,288L0,320L43.6,320L43.6,320L87.3,320L87.3,192L130.9,192L130.9,0L174.5,0L174.5,160L218.2,160L218.2,288L261.8,288L261.8,0L305.5,0L305.5,256L349.1,256L349.1,288L392.7,288L392.7,96L436.4,96L436.4,32L480,32L480,192L523.6,192L523.6,32L567.3,32L567.3,192L610.9,192L610.9,192L654.5,192L654.5,192L698.2,192L698.2,288L741.8,288L741.8,32L785.5,32L785.5,160L829.1,160L829.1,256L872.7,256L872.7,96L916.4,96L916.4,224L960,224L960,32L1003.6,32L1003.6,64L1047.3,64L1047.3,64L1090.9,64L1090.9,320L1134.5,320L1134.5,96L1178.2,96L1178.2,128L1221.8,128L1221.8,256L1265.5,256L1265.5,0L1309.1,0L1309.1,160L1352.7,160L1352.7,160L1396.4,160L1396.4,128L1440,128L1440,320L1396.4,320L1396.4,320L1352.7,320L1352.7,320L1309.1,320L1309.1,320L1265.5,320L1265.5,320L1221.8,320L1221.8,320L1178.2,320L1178.2,320L1134.5,320L1134.5,320L1090.9,320L1090.9,320L1047.3,320L1047.3,320L1003.6,320L1003.6,320L960,320L960,320L916.4,320L916.4,320L872.7,320L872.7,320L829.1,320L829.1,320L785.5,320L785.5,320L741.8,320L741.8,320L698.2,320L698.2,320L654.5,320L654.5,320L610.9,320L610.9,320L567.3,320L567.3,320L523.6,320L523.6,320L480,320L480,320L436.4,320L436.4,320L392.7,320L392.7,320L349.1,320L349.1,320L305.5,320L305.5,320L261.8,320L261.8,320L218.2,320L218.2,320L174.5,320L174.5,320L130.9,320L130.9,320L87.3,320L87.3,320L43.6,320L43.6,320L0,320L0,320Z"></path></svg>
+   <!-- Akhir Kurikulum -->
+   
+
+<!-- Kesiswaan -->
+   <section id="kesiswaan" style="padding-bottom: 1rem;">
+     <div class="container px-4">
+       <div class="row justify-content-evenly" style="padding-bottom: 1rem;">
+        <h2 class="text-center display-6" style="padding-bottom: 1rem;">Aplikasi Kesiswaan</h2>
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card border-warning">
+              <img src="./asset/puspresnas.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">PUSPRESNAS</span>
+                | Website Pendaftran Peserta OSN</p>
+                <div class="col">
+                  <a href="https://sma.pusatprestasinasional.kemdikbud.go.id/ksn/" class="btn rounded-pill btn-outline-warning" target="_blank" rel="noopener noreferrer">Akses Puspresnas</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card border-primary">
+              <img src="./asset/diknas.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">OSNK</span>
+                | Website Manajeman Server Olimpiade Sains Nasional Kabupaten</p>
+                <div class="col">
+                  <a href="https://anbk.kemdikbud.go.id/osnk" class="btn rounded-pill btn-outline-primary" target="_blank" rel="noopener noreferrer">Akses OSNK</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card border-success">
+              <img src="./asset/ksm.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <p class="card-text"><span class="fw-bold">KSM</span>
+                | Kompetisi Sains Madrasah Kemeterian Agama</p>
+                <div class="col">
+                  <a href="https://ksm.kemenag.go.id" class="btn rounded-pill btn-outline-success" target="_blank" rel="noopener noreferrer">Akses KSM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+       </div>
+     </div>
+   </section>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f2f2" fill-opacity="1" d="M0,288L0,192L43.6,192L43.6,288L87.3,288L87.3,64L130.9,64L130.9,288L174.5,288L174.5,192L218.2,192L218.2,224L261.8,224L261.8,128L305.5,128L305.5,160L349.1,160L349.1,128L392.7,128L392.7,256L436.4,256L436.4,128L480,128L480,224L523.6,224L523.6,192L567.3,192L567.3,288L610.9,288L610.9,128L654.5,128L654.5,128L698.2,128L698.2,96L741.8,96L741.8,128L785.5,128L785.5,0L829.1,0L829.1,160L872.7,160L872.7,288L916.4,288L916.4,288L960,288L960,224L1003.6,224L1003.6,32L1047.3,32L1047.3,256L1090.9,256L1090.9,320L1134.5,320L1134.5,256L1178.2,256L1178.2,160L1221.8,160L1221.8,192L1265.5,192L1265.5,160L1309.1,160L1309.1,32L1352.7,32L1352.7,128L1396.4,128L1396.4,320L1440,320L1440,0L1396.4,0L1396.4,0L1352.7,0L1352.7,0L1309.1,0L1309.1,0L1265.5,0L1265.5,0L1221.8,0L1221.8,0L1178.2,0L1178.2,0L1134.5,0L1134.5,0L1090.9,0L1090.9,0L1047.3,0L1047.3,0L1003.6,0L1003.6,0L960,0L960,0L916.4,0L916.4,0L872.7,0L872.7,0L829.1,0L829.1,0L785.5,0L785.5,0L741.8,0L741.8,0L698.2,0L698.2,0L654.5,0L654.5,0L610.9,0L610.9,0L567.3,0L567.3,0L523.6,0L523.6,0L480,0L480,0L436.4,0L436.4,0L392.7,0L392.7,0L349.1,0L349.1,0L305.5,0L305.5,0L261.8,0L261.8,0L218.2,0L218.2,0L174.5,0L174.5,0L130.9,0L130.9,0L87.3,0L87.3,0L43.6,0L43.6,0L0,0L0,0Z"></path></svg>
+   <!-- Akhir Kesiswaan -->
+
+
+<!-- MANDAPO -->
+   <section id="mandapo" style="padding-bottom: 1rem;">
+     <div class="container px-4">
+      <!-- Baris 1 -->
+       <div class="row justify-content-evenly" style="padding-bottom: 1rem;">
+        <h2 class="text-center display-6" style="padding-bottom: 1rem;">Aplikasi MANDAPO</h2>
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-primary">
+              <img src="./asset/web.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <h5 class="card-title">Website Madrasah</h5>
+                <p class="card-text">Official Website MA Negeri 2 Ponorogo</p>
+                <div class="col">
+                  <a href="https://manduaponorogo.sch.id/" class="btn rounded-pill btn-outline-primary" target="_blank" rel="noopener noreferrer">Akses Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-danger">
+              <img src="./asset/perpus.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <h5 class="card-title">Perpustakaan</h5>
+                <p class="card-text">Perpustakaan MA Negeri 2 Ponorogo</p>
+                <div class="col">
+                  <a href="http://digitalman2ponorogo.com" class="btn rounded-pill btn-outline-danger" target="_blank" rel="noopener noreferrer">Akses Perpustakaan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-success">
+              <img src="./asset/logo.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <h5 class="card-title">PTSP</h5>
+                <p class="card-text">Pelayanan Terpadu Satu Pintu</p>
+                <div class="col">
+                  <a href="https://sites.google.com/manduaponorogo.sch.id/ptsp-man-2-ponorogo/beranda" class="btn rounded-pill btn-outline-success" target="_blank" rel="noopener noreferrer">Akses PTSP</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+       </div>
+       <!-- Akhir Baris 1 -->
+
+       <!-- Baris 2 -->
+        <div class="row justify-content-start" style="padding-bottom: 1rem;">
+          <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-primary">
+              <img src="./asset/logo.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <h5 class="card-title">SSO MANDAPO</h5>
+                <p class="card-text">Data Center MA Negeri 2 Ponorogo</p>
+                <div class="col">
+                  <a href="https://sso.manduaponorogo.sch.id/" class="btn rounded-pill btn-outline-primary" target="_blank" rel="noopener noreferrer">Akses SSO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+         <!-- kolom -->
+          <div class="col-md-4" style="padding: 1rem;">
+            <div class="card bg-light border-danger">
+              <img src="./asset/logo.png" alt="..." width="160" height="160" style="padding: 1rem;">
+              <div class="card-body">
+                <h5 class="card-title">VPS E-Learning</h5>
+                <p class="card-text">Setting dan Manajemen VPS E-Learning</p>
+                <div class="col">
+                  <a href="http://elearningman2ponorogo.com:2002/" class="btn rounded-pill btn-outline-danger" target="_blank" rel="noopener noreferrer">Setting VPS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- akhir kolom -->
+
+        </div>
+      <!-- Akhir Baris 2 -->
+     </div>
+   </section>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2f2f2" fill-opacity="1" d="M0,288L0,320L43.6,320L43.6,320L87.3,320L87.3,192L130.9,192L130.9,0L174.5,0L174.5,160L218.2,160L218.2,288L261.8,288L261.8,0L305.5,0L305.5,256L349.1,256L349.1,288L392.7,288L392.7,96L436.4,96L436.4,32L480,32L480,192L523.6,192L523.6,32L567.3,32L567.3,192L610.9,192L610.9,192L654.5,192L654.5,192L698.2,192L698.2,288L741.8,288L741.8,32L785.5,32L785.5,160L829.1,160L829.1,256L872.7,256L872.7,96L916.4,96L916.4,224L960,224L960,32L1003.6,32L1003.6,64L1047.3,64L1047.3,64L1090.9,64L1090.9,320L1134.5,320L1134.5,96L1178.2,96L1178.2,128L1221.8,128L1221.8,256L1265.5,256L1265.5,0L1309.1,0L1309.1,160L1352.7,160L1352.7,160L1396.4,160L1396.4,128L1440,128L1440,320L1396.4,320L1396.4,320L1352.7,320L1352.7,320L1309.1,320L1309.1,320L1265.5,320L1265.5,320L1221.8,320L1221.8,320L1178.2,320L1178.2,320L1134.5,320L1134.5,320L1090.9,320L1090.9,320L1047.3,320L1047.3,320L1003.6,320L1003.6,320L960,320L960,320L916.4,320L916.4,320L872.7,320L872.7,320L829.1,320L829.1,320L785.5,320L785.5,320L741.8,320L741.8,320L698.2,320L698.2,320L654.5,320L654.5,320L610.9,320L610.9,320L567.3,320L567.3,320L523.6,320L523.6,320L480,320L480,320L436.4,320L436.4,320L392.7,320L392.7,320L349.1,320L349.1,320L305.5,320L305.5,320L261.8,320L261.8,320L218.2,320L218.2,320L174.5,320L174.5,320L130.9,320L130.9,320L87.3,320L87.3,320L43.6,320L43.6,320L0,320L0,320Z"></path></svg>
+   <!-- Akhir MANDAPO -->
+
+<!-- Kepegawaian -->
+   <section id="kepegawaian" style="padding-bottom: 1rem; background-color: #F2F2F2;">
+     <div class="container px-4">
+      <!-- Awal Baris -->
+       <div class="row justify-content-evenly" style="padding-bottom: 1rem;">
+        <h2 class="text-center display-6" style="padding-bottom: 1rem;">Aplikasi Kepegawaian</h2>
+          
+        <!-- kolom -->
+          <div class="col-md-6" style="padding: 1rem;">
+            <!-- card -->
+            <div class="card rounded-6">
+              <div class="row g-0 align-items-center">
+                <div class="col-md-2">
+                  <img src="./asset/kemenag.png" class="img-fluid rounded-start" alt="logo kemenag" width="80" height="80">
+                </div>
+                <div class="col-md-10">
+                  <div class="card-body">
+                    <p class="card-text"><span class="fw-bold">SIMPATIKA</span> | Sistem Data Kepegawaian Kemenag</p>
+                    <a href="https://simpatika.kemenag.go.id/" class="btn btn-outline-success rounded-pill" target="_blank" rel="noopener noreferrer">Akses</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Akhir Card -->
+          </div>
+        <!-- akhir kolom -->
+
+       </div>
+       <!-- Akhir Baris -->
+     </div>
+   </section>
+<!-- Akhir Kepegawaian -->
+
+   <!-- footer -->
+   <section id="footer">
+    <div class="row g-0 text-center">
+     <a href="http://elearningman2ponorogo.com/portal" class="text-decoration-none display-8 text-light" target="_blank" rel="noopener noreferrer">© 2021-2022 | <span class="fw-bold">SERTUPU</span></a>
+   </div>
+   </section>
+   <!-- Akhir footer -->
+</body>
+</html>
